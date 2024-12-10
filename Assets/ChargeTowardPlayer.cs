@@ -1,16 +1,19 @@
 using UnityEngine;
 using System.Collections;
+using Unity.Burst.CompilerServices;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class ChargeTowardPlayer : MonoBehaviour
 {
     [SerializeField] float chargeForce;
     [SerializeField] float rateOfCharges;
+    [SerializeField] float chargeRange;
 
     float chargeTimer;
-    bool isCharging = false;
 
     Rigidbody2D rb;
     Transform playerTrans;
+    [SerializeField] LayerMask obstacleLayer;
     Vector3 targetPos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,18 +27,15 @@ public class ChargeTowardPlayer : MonoBehaviour
     void Update()
     {
         targetPos = playerTrans.position - transform.position;
-        Debug.DrawRay(transform.position, targetPos, Color.red);
 
-        if (Physics2D.Linecast(transform.position, targetPos))
-        {
-            Debug.DrawRay(transform.position, targetPos, Color.green);
-            Debug.Log("blocked");
-        }
+        DrawLOS(targetPos);
 
-        if (chargeTimer <= 0)
+        // Can charge.
+        if (chargeTimer <= 0 && targetPos.magnitude < chargeRange)
         {
-            
-            if (Physics2D.Linecast(transform.position, targetPos))
+            // If has line of sight.
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPos, targetPos.magnitude, obstacleLayer);
+            if (hit.collider == null)
             { 
                 Charge();
             }
@@ -49,5 +49,25 @@ public class ChargeTowardPlayer : MonoBehaviour
 
         targetPos = playerTrans.position - transform.position;
         rb.AddForce(targetPos * chargeForce);
+    }
+
+    // Suboptimal as resuses logic but is self contained.
+    void DrawLOS(Vector3 targetPos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPos, targetPos.magnitude, obstacleLayer);
+
+        // In range.
+        if (targetPos.magnitude < chargeRange)
+        {
+            // Has Line of Sight.
+            if (hit.collider == null)
+            {
+                Debug.DrawRay(transform.position, targetPos, Color.green);
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, targetPos, Color.red);
+            }
+        }
     }
 }

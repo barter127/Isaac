@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class StraightToPathfinding : MonoBehaviour
 {
     Transform player;
@@ -16,6 +16,7 @@ public class StraightToPathfinding : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Move at consistant rate.
         transform.position = Vector2.MoveTowards(transform.position ,player.position , speed * Time.fixedDeltaTime);
     }
 }

@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d10187d7033a144f9547ce03c307a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotSpeed: 6.5
+  bulletDir: {x: 0, y: 0, z: 0}
+  shotSpeed: 2.5
   damage: 3.5
   momentumPos: 0.3
   momentumNeg: 0.02
@@ -72,6 +73,7 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428291484592879016}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -95,9 +97,9 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0.00081187487, y: 0}
-  serializedVersion: 2
   m_Radius: 0.03850505
 --- !u!212 &3984421727456854983
 SpriteRenderer:
@@ -116,6 +118,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

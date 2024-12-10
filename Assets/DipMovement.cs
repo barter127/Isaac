@@ -41,39 +41,24 @@ public class DipMovement : MonoBehaviour
             movementDir.x = Random.Range(-maxDistance, maxDistance);
             movementDir.y = Random.Range(-maxDistance, maxDistance);
 
-            movementDir.x = ClampDirectionX(movementDir.x);
-            movementDir.y = ClampDirectionY(movementDir.y);
+            movementDir.x = ClampDirection(movementDir.x);
+            movementDir.y = ClampDirection(movementDir.y);
 
             CheckDirectionToFace(movementDir.x > 0);
             rb.AddForce(movementDir, ForceMode2D.Impulse);
         }
         else nextMovement -= Time.deltaTime;
     }
-
-    // These could be one function but I think having two has more clarity.
     
-    float ClampDirectionX(float distance)
+    float ClampDirection(float distance)
     {
-        if (movementDir.x > 0)
+        if (distance > 0)
         {
             return Mathf.Clamp(distance, minDistance, maxDistance);
         }
         else
         {
             return Mathf.Clamp(distance, -maxDistance, -minDistance);
-        }
-    }
-
-    // Half Y-pos because y axis is shorter.
-    float ClampDirectionY(float distance)
-    {
-        if (movementDir.y > 0)
-        {
-            return Mathf.Clamp(distance, minDistance, maxDistance) / 2;
-        }
-        else
-        {
-            return Mathf.Clamp(distance, -maxDistance, -minDistance) / 2;
         }
     }
 
