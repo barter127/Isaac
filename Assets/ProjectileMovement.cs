@@ -32,7 +32,7 @@ public class ProjectileMovement : MonoBehaviour
         //bulletDir.y += move.movement.y * momentumPos;
 
         //// Increase bullet 
-        //bulletTimer = bulletTimerLength * (1 + dirMultiplier);
+        bulletTimer = bulletTimerLength; //* (1 + dirMultiplier);
 
         //// Change sorting order for each eye.
         //SpriteRenderer spr = GetComponent<SpriteRenderer>();
@@ -46,7 +46,7 @@ public class ProjectileMovement : MonoBehaviour
     {
         if (bulletTimer < 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
         else
         {

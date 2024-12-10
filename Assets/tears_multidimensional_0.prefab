@@ -52,7 +52,7 @@ MonoBehaviour:
   damage: 3.5
   momentumPos: 0.3
   momentumNeg: 0.02
-  bulletTimerLength: 0.8
+  bulletTimerLength: 6
 --- !u!114 &-6911696313978480273
 MonoBehaviour:
   m_ObjectHideFlags: 0
