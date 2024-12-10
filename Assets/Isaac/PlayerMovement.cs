@@ -24,11 +24,11 @@ public class PlayerMovement : MonoBehaviour
         movement = movement.normalized;
 
         float xTarget = movement.x * maxSpeed;
-        float xSpeedDif = xTarget - rb.velocity.x;
+        float xSpeedDif = xTarget - rb.linearVelocity.x;
         float xMovement = xSpeedDif * accelRate;
 
         float yTarget = movement.y * maxSpeed;
-        float ySpeedDif = yTarget - rb.velocity.y;
+        float ySpeedDif = yTarget - rb.linearVelocity.y;
         float yMovement = ySpeedDif * accelRate;
 
         rb.AddForce(xMovement * Vector2.right);
