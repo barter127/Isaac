@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class BulletEffects : MonoBehaviour
 {
-    float rotationAngle = 0;
-
     [SerializeField] GameObject bullet;
     [SerializeField] float angleScale;
     [SerializeField] float fireRate;
@@ -25,6 +23,7 @@ public class BulletEffects : MonoBehaviour
     void Spiral()
     {
         Vector3 bulletDir = Vector3.zero;
+        float rotationAngle = 0;
 
         // Loop for amount of shots.
         for (int i = 0; i <= bulletsPerShot - 1; i++)
@@ -54,22 +53,35 @@ public class BulletEffects : MonoBehaviour
 
         for (int i = 0; i <= bulletsPerShot - 1; i++)
         {
-            // Vector up unessecary but adds readability.
-            bulletDir.x = Mathf.Cos(Vector2.up.x * rotationAngle) - Mathf.Sin(Vector2.up.y * rotationAngle);
-            bulletDir.y = Mathf.Sin(Vector2.up.x * rotationAngle) + Mathf.Cos(Vector2.up.y * rotationAngle);
-            bulletDir = bulletDir.normalized;
+            float rotationAngle = angleScale * i;
+            rotationAngle = Mathf.Deg2Rad * rotationAngle;
+
+            // Calculate the bullet's direction using trigonometry
+            bulletDir.x = Mathf.Cos(rotationAngle);
+            bulletDir.y = Mathf.Sin(rotationAngle);
+
 
             GameObject spawnedBull = Instantiate(bullet, transform.position, transform.rotation);
             spawnedBull.GetComponent<ProjectileMovement>().SetDirection(bulletDir);
+        }
+    }    
 
-            rotationAngle += angleScale;
+    void Scattershot()
+    {
+        Vector3 bulletDir = Vector3.zero;
 
-            if (rotationAngle >= 360)
-            {
-                rotationAngle = 0;
-            }
+        for (int i = 0; i <= bulletsPerShot - 1; i++)
+        {
+            float rotationAngle = angleScale * i;
+            rotationAngle = Mathf.Deg2Rad * rotationAngle;
 
-            Debug.Log(rotationAngle);
+            // Calculate the bullet's direction using trigonometry
+            bulletDir.x = Mathf.Cos(rotationAngle);
+            bulletDir.y = Mathf.Sin(rotationAngle);
+
+
+            GameObject spawnedBull = Instantiate(bullet, transform.position, transform.rotation);
+            spawnedBull.GetComponent<ProjectileMovement>().SetDirection(bulletDir);
         }
     }
 }
