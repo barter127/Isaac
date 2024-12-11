@@ -7,10 +7,12 @@ public class BulletEffects : MonoBehaviour
     [SerializeField] float fireRate;
     [SerializeField] float bulletsPerShot;
 
+    float rotationAngle = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("Straight", 0f, fireRate);
+        InvokeRepeating("Spiral", 0f, fireRate);
         angleScale = 360 / bulletsPerShot;
     }
 
@@ -23,18 +25,18 @@ public class BulletEffects : MonoBehaviour
     void Spiral()
     {
         Vector3 bulletDir = Vector3.zero;
-        float rotationAngle = 0;
 
         // Loop for amount of shots.
         for (int i = 0; i <= bulletsPerShot - 1; i++)
         {
-            // Get 
-            float movementX = transform.position.x + Mathf.Sin(((rotationAngle + angleScale * i) * Mathf.PI) / 180);
-            float movementY = transform.position.y + Mathf.Cos(((rotationAngle + angleScale * i) * Mathf.PI) / 180);
+            // Get bullet move dir.
+            float degrees = rotationAngle + angleScale * i;
+            float bulletDirX = Mathf.Sin((degrees * Mathf.PI) / 180);
+            float bulltDirY = Mathf.Cos((degrees * Mathf.PI) / 180);
 
-            Vector3 moveVector = new Vector3(movementX, movementY, 0);
-            bulletDir = (moveVector - transform.position).normalized;
+            bulletDir = new Vector3(bulletDirX, bulltDirY, 0);
 
+            // Spawn bullet and set direction.
             GameObject spawnedBull = Instantiate(bullet, transform.position, transform.rotation);
             spawnedBull.GetComponent<ProjectileMovement>().SetDirection(bulletDir);
         }
@@ -53,12 +55,11 @@ public class BulletEffects : MonoBehaviour
 
         for (int i = 0; i <= bulletsPerShot - 1; i++)
         {
-            float rotationAngle = angleScale * i;
-            rotationAngle = Mathf.Deg2Rad * rotationAngle;
+            float shotAngle = angleScale * i;
 
             // Calculate the bullet's direction using trigonometry
-            bulletDir.x = Mathf.Cos(rotationAngle);
-            bulletDir.y = Mathf.Sin(rotationAngle);
+            bulletDir.x = Mathf.Cos(shotAngle * Mathf.PI / 180);
+            bulletDir.y = Mathf.Sin(rotationAngle * Mathf.PI / 180);
 
 
             GameObject spawnedBull = Instantiate(bullet, transform.position, transform.rotation);
@@ -76,8 +77,10 @@ public class BulletEffects : MonoBehaviour
             rotationAngle = Mathf.Deg2Rad * rotationAngle;
 
             // Calculate the bullet's direction using trigonometry
-            bulletDir.x = Mathf.Cos(rotationAngle);
-            bulletDir.y = Mathf.Sin(rotationAngle);
+            // Vector up unessecary but adds readability.
+            bulletDir.x = Mathf.Cos(Vector2.up.x * rotationAngle) - Mathf.Sin(Vector2.up.y * rotationAngle);
+            bulletDir.y = Mathf.Sin(Vector2.up.x * rotationAngle) + Mathf.Cos(Vector2.up.y * rotationAngle);
+            bulletDir = bulletDir.normalized;
 
 
             GameObject spawnedBull = Instantiate(bullet, transform.position, transform.rotation);
