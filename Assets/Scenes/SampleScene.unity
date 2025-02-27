@@ -152,6 +152,7 @@ MonoBehaviour:
   angleScale: 0
   fireRate: 0.25
   bulletsPerShot: 12
+  offsetIncrease: 10
 --- !u!212 &78497523
 SpriteRenderer:
   m_ObjectHideFlags: 0
