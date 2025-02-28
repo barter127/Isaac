@@ -5,9 +5,10 @@ using UnityEngine;
 public class ProjectileMovement : MonoBehaviour
 {
     [SerializeField] SpriteRenderer spr;
+    [SerializeField] GameObject splashFx;
 
-    [Header ("Properties")]
-    Vector3 bulletDir;
+    [Header("Properties")]
+    public Vector3 bulletDir { get; private set; }
     [SerializeField] float shotSpeed;
     public float damage;
 
@@ -54,5 +55,11 @@ public class ProjectileMovement : MonoBehaviour
     public void SetSortingLayer(int orderInLayer)
     {
         spr.sortingOrder = orderInLayer;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collider)
+    {
+        Instantiate(splashFx, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

@@ -29,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = movement.normalized;
 
-        Debug.Log(movement);
-
         float xTarget = movement.x * maxSpeed;
         float xSpeedDif = xTarget - rb.linearVelocity.x;
         float xMovement = xSpeedDif * accelRate;

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5586121802102619441}
   - component: {fileID: 480829562691127201}
-  - component: {fileID: -6911696313978480273}
   - component: {fileID: 3115046036710402977}
   - component: {fileID: 3984421727456854983}
+  - component: {fileID: 6074731807892702437}
   m_Layer: 0
   m_Name: tears_multidimensional_0
   m_TagString: Tear
@@ -48,21 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spr: {fileID: 3984421727456854983}
+  splashFx: {fileID: 9061156789143492216, guid: 0c363662dd15b874aa3b8c8b298604f1, type: 3}
   shotSpeed: 2.5
   damage: 3.5
   bulletTimerLength: 6
---- !u!114 &-6911696313978480273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428291484592879016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e4571b42c0ecdd45902dffc4b536680, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &3115046036710402977
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,3 +143,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &6074731807892702437
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428291484592879016}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
