@@ -3,17 +3,11 @@ using UnityEngine;
 public class GaperAnimator : MonoBehaviour
 {
     [SerializeField] Animator animator;
+    [SerializeField] Animator headAnimator;
     [SerializeField] SpriteRenderer spr;
 
     [SerializeField] EnemyAStarMovement movement;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         // Flip sprite renderer if nessecary.
@@ -25,5 +19,14 @@ public class GaperAnimator : MonoBehaviour
         // Set body animation vars.
         animator.SetBool("Move Up", !animateRight);
         animator.SetBool("Move Right", animateRight);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Player enters eyes open range.
+        if (collision.CompareTag("Player"))
+        {
+            headAnimator.SetTrigger("Open Eyes");
+        }
     }
 }
