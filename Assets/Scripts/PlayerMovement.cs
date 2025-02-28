@@ -9,8 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 movement;
     [SerializeField] float accelRate;
     [SerializeField] float maxSpeed;
+    [SerializeField] float drag;
 
     public bool isFacingRight = true;
+
+    void Awake()
+    {
+        rb.linearDamping = drag;
+    }
 
     // Update is called once per frame
     void Update()
