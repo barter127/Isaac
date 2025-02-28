@@ -5,6 +5,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float health;
     [SerializeField] SpriteRenderer spr;
     [SerializeField] SpriteRenderer sprHead;
+    [SerializeField] GameObject bloodSplatterFX;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            Instantiate(bloodSplatterFX, transform.position, Quaternion.identity);
            Destroy(gameObject);
         }
     }
