@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: 24e15b7c1fff95441842456e6149807b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2215312270448904923
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_0
+  - first:
+      213: 7562285159231626555
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_1
+  - first:
+      213: -1551786078060746953
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_2
+  - first:
+      213: -1373624739799422558
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_3
+  - first:
+      213: -7954398767642194537
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_4
+  - first:
+      213: 2529914337817786632
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_5
+  - first:
+      213: -138771065439374575
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_6
+  - first:
+      213: 3643344011994994633
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_7
+  - first:
+      213: -7116007732271539037
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_8
+  - first:
+      213: -971242265760437079
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_9
+  - first:
+      213: -3182944325344629326
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_10
+  - first:
+      213: -4546086567440558379
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_11
+  - first:
+      213: -3124341257621976336
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_12
+  - first:
+      213: 418471955552946792
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_13
+  - first:
+      213: -979611198880045176
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_14
+  - first:
+      213: 6804519683050088971
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_15
+  - first:
+      213: 3690377093679820200
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_16
+  - first:
+      213: -2391286986120683275
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_17
+  - first:
+      213: 8734441608901578609
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_18
+  - first:
+      213: -7568588165106098780
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_19
+  - first:
+      213: 4929009631665663137
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_20
+  - first:
+      213: -5085959821622631932
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_21
+  - first:
+      213: 3566533364184334661
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_22
+  - first:
+      213: 1796854882816864736
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_23
+  - first:
+      213: 9025532121580637970
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_24
+  - first:
+      213: 7002698378413958162
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_25
+  - first:
+      213: -2496192343433380689
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_26
+  - first:
+      213: -6695699987529813890
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_27
+  - first:
+      213: 458794238725266019
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_28
+  - first:
+      213: -1123690333179189671
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_29
+  - first:
+      213: 7149811191852555544
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_30
+  - first:
+      213: 7041776489136747776
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_31
+  - first:
+      213: 7085494166426338544
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_32
+  - first:
+      213: -3917562929731188664
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_33
+  - first:
+      213: 5362111940472965437
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_34
+  - first:
+      213: -6596938685341182967
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_35
+  - first:
+      213: 2458336831195149498
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_36
+  - first:
+      213: 7700297871739237010
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_37
+  - first:
+      213: -2267586801651312511
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_38
+  - first:
+      213: 6838914120890301926
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_39
+  - first:
+      213: -5131912512617138828
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_40
+  - first:
+      213: 9186691581230375374
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_41
+  - first:
+      213: -2354143520302910675
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_42
+  - first:
+      213: 631525065797620188
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_43
+  - first:
+      213: -7623397582196689803
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_44
+  - first:
+      213: 3846233273898911184
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_45
+  - first:
+      213: -6110731596206458584
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_46
+  - first:
+      213: -8279887817810910793
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_47
+  - first:
+      213: 1370244670035854213
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_48
+  - first:
+      213: -102127462278997553
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_49
+  - first:
+      213: -1993354956949069165
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_50
+  - first:
+      213: 2958454315755733484
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_51
+  - first:
+      213: -515194459137129232
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_52
+  - first:
+      213: -6697676347679929409
+    second: PC Computer - The Binding of Isaac Rebirth - Basement_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Basement_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 234
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525345d2a31a141e0800000000000000
+      internalID: -2215312270448904923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Basement_52
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 159
+        width: 130
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4c1e87e59a9d8f0800000000000000
+      internalID: -515194459137129232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - The Binding of Isaac Rebirth - Basement_53
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 187
+        width: 676
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb800cf8d21d03a0800000000000000
+      internalID: -6697676347679929409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_0
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 81
+        width: 338
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f4899ea0a136348b15c8a2f7b69b0f
+      internalID: 1476353281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_1
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 159
+        width: 130
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d07c7bdcb73d7428627e16874d44b7
+      internalID: 1658911685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_2
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3
+        width: 338
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae516e6ec5b7794994d8dcefa650726
+      internalID: -1437763732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_3
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 5
+        width: 676
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f9cea915d3c7343a4abfae7f7f795a
+      internalID: 1161828662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_4
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 187
+        width: 338
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1579a9d50da537947ba2d30d4f71af76
+      internalID: 91410610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_5
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 5
+        width: 338
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298befb19cfdef74594ab7c2c46abed5
+      internalID: -104611226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasementBG_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 51
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dc1d0888322894eacbf4c582b2aa3c
+      internalID: -1591203676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d3aabda01f9d2074f9fe9c07779f45db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BasementBG_0: 1476353281
+      BasementBG_1: 1658911685
+      BasementBG_2: -1437763732
+      BasementBG_3: 1161828662
+      BasementBG_4: 91410610
+      BasementBG_5: -104611226
+      BasementBG_6: -1591203676
+      PC Computer - The Binding of Isaac Rebirth - Basement_0: -2215312270448904923
+      PC Computer - The Binding of Isaac Rebirth - Basement_1: 7562285159231626555
+      PC Computer - The Binding of Isaac Rebirth - Basement_10: -3182944325344629326
+      PC Computer - The Binding of Isaac Rebirth - Basement_11: -4546086567440558379
+      PC Computer - The Binding of Isaac Rebirth - Basement_12: -3124341257621976336
+      PC Computer - The Binding of Isaac Rebirth - Basement_13: 418471955552946792
+      PC Computer - The Binding of Isaac Rebirth - Basement_14: -979611198880045176
+      PC Computer - The Binding of Isaac Rebirth - Basement_15: 6804519683050088971
+      PC Computer - The Binding of Isaac Rebirth - Basement_16: 3690377093679820200
+      PC Computer - The Binding of Isaac Rebirth - Basement_17: -2391286986120683275
+      PC Computer - The Binding of Isaac Rebirth - Basement_18: 8734441608901578609
+      PC Computer - The Binding of Isaac Rebirth - Basement_19: -7568588165106098780
+      PC Computer - The Binding of Isaac Rebirth - Basement_2: -1551786078060746953
+      PC Computer - The Binding of Isaac Rebirth - Basement_20: 4929009631665663137
+      PC Computer - The Binding of Isaac Rebirth - Basement_21: -5085959821622631932
+      PC Computer - The Binding of Isaac Rebirth - Basement_22: 3566533364184334661
+      PC Computer - The Binding of Isaac Rebirth - Basement_23: 1796854882816864736
+      PC Computer - The Binding of Isaac Rebirth - Basement_24: 9025532121580637970
+      PC Computer - The Binding of Isaac Rebirth - Basement_25: 7002698378413958162
+      PC Computer - The Binding of Isaac Rebirth - Basement_26: -2496192343433380689
+      PC Computer - The Binding of Isaac Rebirth - Basement_27: -6695699987529813890
+      PC Computer - The Binding of Isaac Rebirth - Basement_28: 458794238725266019
+      PC Computer - The Binding of Isaac Rebirth - Basement_29: -1123690333179189671
+      PC Computer - The Binding of Isaac Rebirth - Basement_3: -1373624739799422558
+      PC Computer - The Binding of Isaac Rebirth - Basement_30: 7149811191852555544
+      PC Computer - The Binding of Isaac Rebirth - Basement_31: 7041776489136747776
+      PC Computer - The Binding of Isaac Rebirth - Basement_32: 7085494166426338544
+      PC Computer - The Binding of Isaac Rebirth - Basement_33: -3917562929731188664
+      PC Computer - The Binding of Isaac Rebirth - Basement_34: 5362111940472965437
+      PC Computer - The Binding of Isaac Rebirth - Basement_35: -6596938685341182967
+      PC Computer - The Binding of Isaac Rebirth - Basement_36: 2458336831195149498
+      PC Computer - The Binding of Isaac Rebirth - Basement_37: 7700297871739237010
+      PC Computer - The Binding of Isaac Rebirth - Basement_38: -2267586801651312511
+      PC Computer - The Binding of Isaac Rebirth - Basement_39: 6838914120890301926
+      PC Computer - The Binding of Isaac Rebirth - Basement_4: -7954398767642194537
+      PC Computer - The Binding of Isaac Rebirth - Basement_40: -5131912512617138828
+      PC Computer - The Binding of Isaac Rebirth - Basement_41: 9186691581230375374
+      PC Computer - The Binding of Isaac Rebirth - Basement_42: -2354143520302910675
+      PC Computer - The Binding of Isaac Rebirth - Basement_43: 631525065797620188
+      PC Computer - The Binding of Isaac Rebirth - Basement_44: -7623397582196689803
+      PC Computer - The Binding of Isaac Rebirth - Basement_45: 3846233273898911184
+      PC Computer - The Binding of Isaac Rebirth - Basement_46: -6110731596206458584
+      PC Computer - The Binding of Isaac Rebirth - Basement_47: -8279887817810910793
+      PC Computer - The Binding of Isaac Rebirth - Basement_48: 1370244670035854213
+      PC Computer - The Binding of Isaac Rebirth - Basement_49: -102127462278997553
+      PC Computer - The Binding of Isaac Rebirth - Basement_5: 2529914337817786632
+      PC Computer - The Binding of Isaac Rebirth - Basement_50: -1993354956949069165
+      PC Computer - The Binding of Isaac Rebirth - Basement_51: 2958454315755733484
+      PC Computer - The Binding of Isaac Rebirth - Basement_52: -515194459137129232
+      PC Computer - The Binding of Isaac Rebirth - Basement_53: -6697676347679929409
+      PC Computer - The Binding of Isaac Rebirth - Basement_6: -138771065439374575
+      PC Computer - The Binding of Isaac Rebirth - Basement_7: 3643344011994994633
+      PC Computer - The Binding of Isaac Rebirth - Basement_8: -7116007732271539037
+      PC Computer - The Binding of Isaac Rebirth - Basement_9: -971242265760437079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
