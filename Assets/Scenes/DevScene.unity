@@ -1446,7 +1446,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1603042123, guid: 021186b77426f6a408f0df21aead13bf, type: 3}
+  m_Sprite: {fileID: 1882980714, guid: 021186b77426f6a408f0df21aead13bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1528,6 +1528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4480b938ebc9db6408abb0758ff21926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {fileID: 1509295431}
+  animator: {fileID: 1509295437}
+  spr: {fileID: 1509295435}
 --- !u!1001 &1793416068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1687,7 +1690,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1764057317, guid: 021186b77426f6a408f0df21aead13bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
