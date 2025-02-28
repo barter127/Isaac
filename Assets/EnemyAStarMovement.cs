@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class EnemyAStarMovement : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    public Transform target;
     [SerializeField] NavMeshAgent agent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
