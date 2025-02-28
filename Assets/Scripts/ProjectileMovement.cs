@@ -4,42 +4,20 @@ using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour
 {
-    public Vector3 bulletDir;
+    [SerializeField] SpriteRenderer spr;
+
+    [Header ("Properties")]
+    Vector3 bulletDir;
     [SerializeField] float shotSpeed;
     public float damage;
-
-    // Multiplier for bullet momentum.
-    [SerializeField] float momentumPos;
-    [SerializeField] float momentumNeg;
 
     float bulletTimer;
     [SerializeField] float bulletTimerLength;
 
     private void Start()
     {
-        //// Set bulletDir based off shootDir.
-        //GameObject head = GameObject.Find("Head");
-        //IsaacShoot isaacShoot = head.GetComponent<IsaacShoot>();
-        //GameObject isaac = GameObject.Find("Isaac");
-        //PlayerMovement move = isaac.GetComponent<PlayerMovement>();
-
-        //bulletDir = isaacShoot.shootDir;
-        //bulletDir = bulletDir.normalized;
-
-        //// Increase speed when moving with. Limit speed when moving against.
-        //float dirMultiplier = bulletDir == move.movement ? momentumPos : momentumNeg;
-        //bulletDir.x += move.movement.x * dirMultiplier;
-        //bulletDir.y += move.movement.y * momentumPos;
-
-        //// Increase bullet 
+        // Increase bullet lifespan
         bulletTimer = bulletTimerLength; //* (1 + dirMultiplier);
-
-        //// Change sorting order for each eye.
-        //SpriteRenderer spr = GetComponent<SpriteRenderer>();
-        //if (bulletDir.y == 0)
-        //{
-        //    spr.sortingOrder = isaacShoot.usingRightEye ? 2 : 0;
-        //}
     }
 
     private void Update()
@@ -59,14 +37,22 @@ public class ProjectileMovement : MonoBehaviour
         transform.position += bulletDir * shotSpeed * Time.fixedDeltaTime;
     }
 
+    // Sets direction of bullet
     public void SetDirection(Vector3 newBulletDir)
     {
-        bulletDir = newBulletDir;
+        bulletDir = newBulletDir * shotSpeed;
     }
 
+    // Sets direction of bullet
     public void SetDirection(Vector2 newBulletDir)
     {
 
-        bulletDir = new Vector3(newBulletDir.x, newBulletDir.y, 0);
+        bulletDir = new Vector3(newBulletDir.x, newBulletDir.y, 0) * shotSpeed;
+    }
+
+    // Sets sortning layer.
+    public void SetSortingLayer(int orderInLayer)
+    {
+        spr.sortingOrder = orderInLayer;
     }
 }

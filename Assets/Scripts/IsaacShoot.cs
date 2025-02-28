@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class IsaacShoot : MonoBehaviour
 {
-    public Vector3 shootDir;
+    [SerializeField] PlayerMovement playerMovement;
+
+    [HideInInspector] public Vector3 shootDir;
     KeyCode lastInput;
 
     [SerializeField] GameObject bullet;
@@ -12,11 +14,17 @@ public class IsaacShoot : MonoBehaviour
     [SerializeField] float shootTimerLength;
     float shootTimer;
 
+    [Header ("Eyes")]
     [SerializeField] GameObject leftEye;
     [SerializeField] GameObject rightEye;
     public bool usingRightEye { get; private set; }
 
     public bool isFiring;
+
+    [Header("Tear Momentum")]
+    // Multiplier for bullet momentum.
+    [SerializeField] float momentumPos;
+    [SerializeField] float momentumNeg;
 
     private void Start()
     {
@@ -70,14 +78,33 @@ public class IsaacShoot : MonoBehaviour
     {
         if (shootTimer <= 0)
         {
-            // Switch shooting eye.
-            Vector2 tearSpawnPos = usingRightEye ? leftEye.transform.position : rightEye.transform.position;
-            usingRightEye = !usingRightEye;
-
             isFiring = true;
 
-            Instantiate(bullet, tearSpawnPos, Quaternion.identity);
+            // Determine eye to shoot from.
+            Vector2 tearSpawnPos = usingRightEye ? rightEye.transform.position : leftEye.transform.position;
+
+            // Spawn tear.
+            GameObject spawnedBullet = Instantiate(bullet, tearSpawnPos, Quaternion.identity);
             shootTimer = shootTimerLength;
+
+            // Set projectile properties
+            ProjectileMovement projMovement = spawnedBullet.GetComponent<ProjectileMovement>();
+
+            shootDir = shootDir.normalized;
+
+            //// Increase speed when moving with. Limit speed when moving against.
+            float dirMultiplier = shootDir == playerMovement.movement ? momentumPos : momentumNeg;
+            shootDir.x += playerMovement.movement.x * dirMultiplier;
+            shootDir.y += playerMovement.movement.y * dirMultiplier;
+
+            projMovement.SetDirection(shootDir);
+
+            // Set bullet sort order.
+            int sortOrder = usingRightEye ? 2 : 0;
+            projMovement.SetSortingLayer(sortOrder);
+
+            // Switch shooting eye.
+            usingRightEye = !usingRightEye;
         }
     }
 }

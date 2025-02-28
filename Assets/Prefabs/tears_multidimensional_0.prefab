@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,11 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d10187d7033a144f9547ce03c307a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDir: {x: 0, y: 0, z: 0}
+  spr: {fileID: 3984421727456854983}
   shotSpeed: 2.5
   damage: 3.5
-  momentumPos: 0.3
-  momentumNeg: 0.02
   bulletTimerLength: 6
 --- !u!114 &-6911696313978480273
 MonoBehaviour:
@@ -81,7 +79,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
